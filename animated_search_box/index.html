@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Animated Search Box</title>
+        <style>
+            body{
+                background : rgba(242,38,19,1);
+                margin : 0px;
+                padding : 0px;
+            }
+            
+            .box{
+                background : black;
+                position : absolute;
+                top : 50%;
+                left : 30%;
+                display : flex;
+                justify-content : center;
+                align-content : center;
+                padding : 10px;
+                border-radius : 50px;
+                
+            }
+            
+            .box:hover > .Search{
+                width : 350px;
+                transition: 0.6s;
+            }
+            
+            .box:hover > .Search-icon{
+                background: white;
+                border-radius: 50px;
+                transition: 0.6s;
+            }
+            .Search{
+                background : none;
+                border : none;
+                outline : none;
+                color : white;
+                font-size: 15px;
+                font-family: sans-serif;
+                width : 0px;
+                transition: 0.6s;
+                font-size: 20px;
+            }
+            
+            .Search-icon{
+                padding : 10px 10px;
+                color : red;
+                border-radius: 50px;
+                outline: none;
+                border: none;
+                transition: 0.6s;
+            }
+        </style>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    </head>
+    <body>
+        <div class="box">
+            <input class="Search" placeholder="Type to Search...">
+            <a class="Search-icon" href="#"><i class="fas fa-search"></i></a>
+        </div>
+    </body>
+</html>

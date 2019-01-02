@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>Login page</title>
+        <style>
+            *, *:before, *:after {
+                    box-sizing: border-box;
+                    margin: 0px;
+                    padding: 0px;
+            }
+            body{
+                background: rgba(44, 62, 80, 1);
+                margin: 0px;
+                padding: 0px;
+            }
+            .box{
+                background: rgba(36, 37, 42, 1);
+                height:330px;
+                width:400px;
+                text-align: center;
+                padding:40px;
+                position: absolute;
+                transform: translate(50%,50%);
+            }
+            h1{
+                font-family: sans-serif;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: white;
+            }
+            .box input[type = "text"],
+            .box input[type="password"]{
+                border : 0px;
+                background : none;
+                text-align : center;
+                width : 200px;
+                margin : 20px auto;
+                display : block;
+                border : 2px solid rgba(107, 185, 240, 1);
+                padding: 15px;
+                border-radius: 50px;
+                color: white;
+                font-size: 17px;
+                outline: none;
+            }
+            .box input[type = "text"]:focus,
+            .box input[type="password"]:focus{
+                border : 0px;
+                background : none;
+                text-align : center;
+                width : 280px;
+                margin : 20px auto;
+                display : block;
+                border : 2px solid rgba(46, 204, 113, 1);
+                padding: 15px;
+                border-radius: 50px;
+                color: white;
+                transition: 0.25s;
+            }
+            
+            .box input[type="button"]{
+                border : 0px;
+                background : none;
+                text-align : center;
+                width : 120px;
+                margin : 20px auto;
+                display : block;
+                border : 2px solid rgba(46, 204, 113, 1);
+                padding: 15px;
+                border-radius: 50px;
+                color: white;
+                outline: none;
+            }
+            .box input[type="button"]:hover{
+                border : 0px;
+                background : rgba(46, 204, 113, 1);
+                text-align : center;
+                width : 120px;
+                margin : 20px auto;
+                display : block;
+                border : 2px solid rgba(46, 204, 113, 1);
+                padding: 15px;
+                border-radius: 50px;
+                color: white;
+                transition: 0.25s;
+            }
+            
+            
+            
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <h1>Login</h1>
+            <input type="text" placeholder="Email" >
+            <input type="password" placeholder="Password">
+            <input type="button" value="Login">
+        </div>
+    </body>
+</html>

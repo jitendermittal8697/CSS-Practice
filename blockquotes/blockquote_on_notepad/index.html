@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            body{
+                background-color: #3782b0;
+                margin: 0px;
+                padding: 0px;
+            }
+            .box{
+                position: absolute;
+                top: 50%;
+                left : 50%;
+                transform: translate(-50% ,-50%);
+                height: 400px;
+                width: 550px;
+            }
+            .note-binder{
+                background-image: linear-gradient(to bottom, #226797, #0c3452);
+                width: 500px;
+                height: 60px;
+                color: white;
+                font-size: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: sans-serif;
+                border-bottom-style: dashed;
+                border-radius: 12px 12px 0 0;
+            }
+            .noteone{
+                background: white;
+                height: 292px;
+                width: 500px;
+                border-radius: 0px 0px 3px 3px;
+                background-image: linear-gradient(#f6abca , #f6abca), linear-gradient(#f6abca, #f6abca), linear-gradient(#e8e8e8, transparent 10%); 
+                background-size: 1px 1px, 1px 1px, 1px 28px;
+                background-position: 53px 0px , 55px 0px, 70px 60px;
+                background-repeat: repeat-y,repeat-y,repeat;
+                font-family: sans-serif;
+                
+                box-shadow:0 1px 1px rgba(0,0,0,0.15),
+                /* The second layer */
+                0 10px 0 -5px #eee,
+                /* The second layer shadow */
+                0 10px 1px -4px rgba(0,0,0,0.15),
+                /* The third layer */
+                0 20px 0 -10px #eee,
+                /* The third layer shadow */
+                0 20px 1px -9px rgba(0,0,0,0.15);
+            }
+            
+            .noteone .para1{
+                position: relative;
+                left:80px;
+                top: 40px;
+                width:400px;
+                line-height: 28px;
+            }
+            .para1 div{
+                float: right;
+                margin-right: 8px;
+            }
+            .noteone .para2{
+                position:relative;
+                left:80px;
+                top: 96px;
+                width:400px;
+                line-height: 28px;
+                float: left;
+            }
+            .para2 div{
+                float: right;
+                margin-right: 8px;
+            }
+            .noteone .Made-By{
+                position: relative;
+                top: 128px;
+                float:right;
+                margin-right: 28px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="note-binder">Notepad</div>
+            <div class="noteone">
+                <div class="para1">The essence of the independent mind lies not in what it thinks, but in how it thinks.<br>
+                <div>— Christopher Hitchens</div>
+                </div>
+                <div class="para2">The best way to predict the future is to invent it.<br>
+                <div>— Alan Kay</div>
+                </div>
+                <div class="Made-By"><b>Made By :- Jitender Mittal</b></div>
+            </div>
+            <div class="notetwo"></div>
+            <div class="notethree"></div>
+        </div>
+    </body>
+</html>
